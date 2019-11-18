@@ -10,11 +10,12 @@ void main()
        {
 	 if(i>=j)
 	 {
-
-	 printf("*");
-	 delay(50);
+	   printf("*");
 	 }
-
+	 else
+	 {
+	 printf(" ");
+	 }
 	 }
 	 printf("\n");
 	 }

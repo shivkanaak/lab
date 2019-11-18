@@ -2,16 +2,35 @@
 #include<conio.h>
 void main()
 {
-	int i,n,f=1;
+	int i,j;
 	clrscr();
-	printf("Enter a number");
-	scanf("%d",&n);
-	//factorial block start
-	for(i=1;i<=n;i++)
-	{
-	f=f*i;
+       for(i=4;i>=1;i--)
+{
+	for(j=1;j<=4;j++)
+{
+	if(i>=j)
+{
+	printf("*");
 	}
-	printf("factorial value %d",f);
-	//factorial block ends
-	getch();
+
+
 }
+	printf("\n");
+}
+for(i=1;i<=4;i++)
+{
+
+for(j=1;j<=4;j++)
+{
+if(j<=i)
+
+printf("*");
+	}
+
+printf("\n");
+}
+getch();
+}
+
+
+
