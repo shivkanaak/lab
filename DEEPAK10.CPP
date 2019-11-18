@@ -1,0 +1,30 @@
+/* that program of print the runnable pattern program
+   *****
+    ****
+     ***
+      **
+       *
+   this program coded by deepak kumar
+   program no. 10
+*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+  int i,j,k;
+  for(i=1;i<=5;i++)
+  {
+   for(j=1;j<=i;j++)
+   {
+    printf(" ");
+   }
+   for(k=i;k<=5;k++)
+   {
+    printf("*");
+   }
+  printf("\n");
+  }
+ getch();
+}

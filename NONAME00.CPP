@@ -1,20 +1,14 @@
-#include<stdio.h>
+/*This is a programe of
+ (Exp1)?(Exp2):(Exp3); as folowing:-
+ */
+#include<iostream.h>
 #include<conio.h>
-void main()
-{
-	int i,j;
-	clrscr();
-	for(i=0;i<=4;i++)
+	void mani()
 	{
-		for(j=0;j<=4;j++)
-		{
-			if(i<=j)
-			printf("*");
+		int x,y;
 
-		}
-		printf("\n");
-	}
-	getch();
-}
-
-
+		printf("Pleas enter valu of \t x ");
+		scanf("%d",&x);
+		printf("Pleas enter value of \t y");
+		scanf("%d",&y);
+		(x>y)?printf("x is gater
