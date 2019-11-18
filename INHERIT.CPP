@@ -1,59 +1,42 @@
 #include<iostream.h>
 #include<conio.h>
-
-class student
+class a
 {
-       protected:
-	int roll;
-	char name[20];
+
 	public:
-	void read()
+	int a;
+	void input()
 	{
-	cout<<"enter roll \n";
-	cin>>roll;
-	cout<<"enter name \n";
-	cin>>name;
+	cout<<"enter a";
+	cin>>a;
 	}
 };
-class marks : public student
-{     protected:
-      int   sub1,sub2,sub3;
-      public:
-      void mread()
-      {
-	cout<<" marks : ";
-	cin>>sub1;
-	cout<<"enter marks ";
-	cin>>sub2;
-	cout<<"enter last subject marks ";
-	cin>>sub3;
-      }
-
-};
-class calc : public marks
+class b: public a
 {
 	public:
-	int total;
-
-	void total_marks()
+	int b;
+	void input()
 	{
-		total=sub1+sub2+sub3;
-	}
+	cout<<" enter b :";
+	cin>>b;
 
-	void percentage ()
-	{
-		float per;
-		per=total*100/300;
-		cout<<"\npercentage= "<<per;
 	}
-
+	void sum();
 };
+void b :: sum()
+{
+	int c=0;
+	c=a+b;
+	cout<<"sum is "<<c;
+}
+
 void main()
 {
-clrscr();
-calc c;
-c.read();
-c.mread();
-c.total_marks();
-c.percentage();
+	clrscr();
+	a a1;
+	a1.input();
+	b b1;
+	b1.input();
+	b1.sum();
+
 }
